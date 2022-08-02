@@ -1,0 +1,42 @@
+.how {
+  padding: 40px 0;
+  .content {
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 0;
+    padding-left: 39px;
+  }
+  
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .box {
+    text-align: left;
+    max-width: 535px;
+    padding-right: 20px;
+    &__img-block {
+      width: 100%;
+      background-color: $lightGrey-color-two;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 22px;
+      margin-bottom: 1px;
+    }
+    &__subtitle {
+      width: 295px;
+    }
+    &__img {
+      width: 80%;
+    }
+    &:last-child {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+}

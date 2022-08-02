@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <link rel="stylesheet" href="./src/libs/bootstrap.css" />
+    <link rel="stylesheet" href="./src/libs/swiper.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav">
+          <li class="nav__item"><a class="nav__link nav__link_active" href="#">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Для бизнеса</a></li>
+          <li class="nav__item"><button class="nav__switch-btn" href="#">ru</button></li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a class="nav__login">Войти</a>/<a class="nav__register">регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="home">
+      <div class="container">
+        <div class="row">
+          <div class="home__content col-md-7">
+            <h1 class="home__title title-h1">
+              Облегчаем взаимодействие между <span class="yellow-text">покупателем</span> и
+              <span class="yellow-text">продавцом</span>
+            </h1>
+            <p class="home__subtitle subtitle">
+              ГБ - это центр эффективного планирования закупок избавляющий вас от хлопот с поиском и подбором
+            </p>
+            <p class="home__text">
+              Cоздайте бесплатную учетную запись
+              <span class="info-span">*кредитная карта не требуется</span>
+            </p>
+            <button class="home__btn btn" id="create-account-btn">Создать аккаунт</button>
+          </div>
+          <div class="home__slider swiper col-md-5">
+              <div class="swiper-wrapper">
+                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-1.png" alt="slide-img"></div>
+                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-2.png" alt="slide-img"></div>
+                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-3.png" alt="slide-img"></div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="company">
+        <div class="container content">
+            <h2 class="company__title title">Упрощенные закупки для более чем <span class="yellow-text">100,000</span> пользователей по всему миру</h2>
+            <div class="company__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo1.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo2.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo3.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo4.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo5.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo6.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo1.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo2.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo3.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo4.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo5.svg" alt="icon-company"></div>
+                    <div class="company__block swiper-slide"><img src="./src/img/company/logo6.svg" alt="icon-company"></div>
+                   </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-ps">
+        <div class="container content">
+            <h2 class="work-ps__title title">Процесс работы</h2>
+            <ul class="work-ps__cards">
+                <li class=" wrok-ps__card card">
+                    <img src="./src/img/work-ps/icon1.svg" alt="card-icon" class="card__icon">
+                    <h3 class="card__title min-title">Создайте заявку</h3>
+                    <p class="card__text">Сообщите ГБ о ваших потребностях и требуемых условиях</p>
+                </li>
+                <li class=" wrok-ps__card card">
+                    <img src="./src/img/work-ps/icon2.svg" alt="card-icon" class="card__icon">
+                    <h3 class="card__title min-title">Займитесь своими делами</h3>
+                    <p class="card__text">ГБ сделает всю работу за вас: опросит тысячи продавцов в реальном времени, проведет аукцион, сравнит предложения.</p>
+                </li>
+                <li class=" wrok-ps__card card">
+                    <img src="./src/img/work-ps/icon3.svg" alt="card-icon" class="card__icon">
+                    <h3 class="card__title min-title">Выберете лучшее предложение</h3>
+                    <p class="card__text">Выберете из предложение по требуемым для вас условиям и оплатите его или отправьте на второй круг торгов</p>
+              </li>
+            </ul>
+        </div>
+    </section>
+    <section class="how">
+        <div class="container content">
+                <div class="text-content row">
+                    <h2 class="how__title title col-md-6">Как происходит создание заявки</h2>
+                    <p class="how__subtitle col-md-6">Получайте нужные вам товары/услуги на выгодных для вас условиях без траты вашего времени на подбор</p> 
+                </div>
+                <div class="how__boxes">
+                    <div class="how__box box">
+                        <div class="box__img-block"><img src="./src/img/how/anim-1.gif" alt="gif" class="box__img"> </div>
+                        <h3 class="box__title">Закажи все что ты хочешь</h3>
+                        <p class="box__subtitle subtitle">Указывайте те условия которые вам требуются - цена, сроки, комплектация...</p>
+                    </div>
+                    <div class="how__box box">
+                        <div class="box__img-block"><img src="./src/img/how/anim-2.gif" alt="gif" class="box__img"></div>
+                        <h3 class="box__title">ГБ скоординирует все это</h3>
+                        <p class="box__subtitle subtitle">Планируемые заранее закупки — еще дешевле</p>
+                    </div>
+                </div>
+                <button class="how__btn btn">Зарегистрироваться</button>
+            </div>
+    </section>
+    <section class="planing">
+        <div class="container content">
+            <div class="text-content">
+                <h2 class="planing__title title">Планирование</h2>
+            </div>
+        </div>
+    </section>
+    <script src="./src/libs/swiper.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

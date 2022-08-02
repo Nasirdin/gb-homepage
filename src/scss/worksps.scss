@@ -1,0 +1,24 @@
+.work-ps {
+  padding: 40px 0;
+  &__title {
+    margin-bottom: 42px;
+  }
+  &__cards {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card {
+    height: 231px;
+    width: 335px;
+    padding: 34px 24px;
+    border-radius: 20px;
+    background-color: $lightGrey-color-two;
+    border: none;
+    &__icon {
+      width: 48px;
+      margin-bottom: 20px;
+    }
+  }
+}

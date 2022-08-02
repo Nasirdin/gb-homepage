@@ -1,0 +1,338 @@
+@import url(../fonts/manrope/stylesheet.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #161616;
+  background: #f5f5f5;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.title-h1 {
+  font-size: 42px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.min-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.info-span {
+  font-size: 12px;
+  color: #99a2ad;
+}
+
+.yellow-text {
+  color: #ffdc00;
+}
+
+.btn {
+  background-color: #ffdc00;
+  color: #161616;
+  padding: 15px 0;
+  display: inline-block;
+  width: 295px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+.btn:hover {
+  background-color: #dddcdc;
+}
+
+.text-content {
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid #dddcdc;
+  text-align: left;
+}
+
+.header {
+  padding: 35px 0;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .nav__item {
+  margin-left: 30px;
+}
+.header .nav__item:first-child {
+  margin-left: 0;
+}
+.header .nav__link {
+  color: #99a2ad;
+  font-weight: 500;
+}
+.header .nav__link_active {
+  position: relative;
+  color: #161616;
+}
+.header .nav__link_active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #ffdc00;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  left: 0;
+  bottom: -10px;
+  border-radius: 51px;
+}
+.header .nav__authorization {
+  padding: 4px 12px;
+  background-color: #ffdc00;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .nav__authorization img {
+  margin-right: 5px;
+}
+.header .nav__login,
+.header .nav .nav__register {
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header .nav__login:hover,
+.header .nav .nav__register:hover {
+  color: #99a2ad;
+}
+
+.home {
+  padding: 80px 0 40px;
+}
+.home .container {
+  border-radius: 20px;
+  background-color: #fff;
+}
+.home__content {
+  padding: 30px 70px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home__title {
+  line-height: 52px;
+}
+.home .row {
+  width: 100%;
+  margin: 0;
+}
+.home__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 14px;
+}
+.home__slider {
+  padding: 30px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home__slider .swiper-wrapper {
+  height: auto;
+}
+.home__slider::before {
+  width: 324px;
+  height: 300px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  background: rgba(255, 220, 0, 0.3);
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+.home__img-block {
+  max-width: 168px;
+  margin-right: 12px;
+}
+.home__img-block img {
+  width: 100%;
+}
+
+.company {
+  padding: 40px 0;
+}
+.company__title {
+  width: 660px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.company__block {
+  text-align: center;
+}
+
+.work-ps {
+  padding: 40px 0;
+}
+.work-ps__title {
+  margin-bottom: 42px;
+}
+.work-ps__cards {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.work-ps .card {
+  height: 231px;
+  width: 335px;
+  padding: 34px 24px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: none;
+}
+.work-ps .card__icon {
+  width: 48px;
+  margin-bottom: 20px;
+}
+
+.how {
+  padding: 40px 0;
+}
+.how .content {
+  text-align: center;
+}
+.how__subtitle {
+  margin-bottom: 0;
+  padding-left: 39px;
+}
+.how__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.how .box {
+  text-align: left;
+  max-width: 535px;
+  padding-right: 20px;
+}
+.how .box__img-block {
+  width: 100%;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.how .box__title {
+  font-size: 22px;
+  margin-bottom: 1px;
+}
+.how .box__subtitle {
+  width: 295px;
+}
+.how .box__img {
+  width: 80%;
+}
+.how .box:last-child {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.planing__title {
+  margin: 0;
+}
