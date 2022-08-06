@@ -1,0 +1,14 @@
+.free {
+  margin-bottom: 130px;
+}
+.free .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.free__subtitle {
+  margin-bottom: 0;
+}
+.free .col-md-5 {
+  text-align: right;
+}

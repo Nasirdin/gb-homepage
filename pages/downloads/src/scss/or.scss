@@ -1,0 +1,16 @@
+.or {
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $lightGrey-color-three;
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    background-color: $lightGrey-color;
+    padding: 0 10px;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

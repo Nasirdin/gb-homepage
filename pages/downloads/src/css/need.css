@@ -1,0 +1,30 @@
+.need {
+  text-align: center;
+  padding: 40px 0 80px;
+}
+.need .text-content {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+.need .title {
+  margin-bottom: 40px;
+}
+.need__devices {
+  max-width: 843px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.need__icon {
+  margin-bottom: 10px;
+}

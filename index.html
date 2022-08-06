@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GrandBazar - e-commerce superhub</title>
-    <link rel="stylesheet" href="./src/libs/bootstrap.css" />
     <link rel="stylesheet" href="./src/libs/swiper.min.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
@@ -16,9 +15,21 @@
         <ul class="header__nav nav">
           <li class="nav__item"><a class="nav__link nav__link_active" href="#">Главная</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Функции</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Загрузки</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Для бизнеса</a></li>
-          <li class="nav__item"><button class="nav__switch-btn" href="#">ru</button></li>
+          <li class="nav__item"><a class="nav__link" href="/pages/downloads">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="/pages/business/">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
           <li class="nav__item nav__authorization">
             <img src="./src/img/header/auth.svg" aly="authorization-icon" />
             <a class="nav__login">Войти</a>/<a class="nav__register">регистрация</a>
@@ -28,8 +39,8 @@
     </header>
     <section class="home">
       <div class="container">
-        <div class="row">
-          <div class="home__content col-md-7">
+        <div class="content">
+          <div class="home__content">
             <h1 class="home__title title-h1">
               Облегчаем взаимодействие между <span class="yellow-text">покупателем</span> и
               <span class="yellow-text">продавцом</span>
@@ -43,86 +54,234 @@
             </p>
             <button class="home__btn btn" id="create-account-btn">Создать аккаунт</button>
           </div>
-          <div class="home__slider swiper col-md-5">
-              <div class="swiper-wrapper">
-                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-1.png" alt="slide-img"></div>
-                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-2.png" alt="slide-img"></div>
-                <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-3.png" alt="slide-img"></div>
-              </div>
+          <div class="home__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-1.png" alt="slide-img" /></div>
+              <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-2.png" alt="slide-img" /></div>
+              <div class="home__img-block swiper-slide"><img src="./src/img/home/slide-3.png" alt="slide-img" /></div>
+            </div>
+          </div>
+          <div class="home__slider two">
+            <div class="swiper-wrapper">
+              <div class="home__img-block"><img src="./src/img/home/slide-1.png" alt="slide-img" /></div>
+              <div class="home__img-block"><img src="./src/img/home/slide-2.png" alt="slide-img" /></div>
+              <div class="home__img-block"><img src="./src/img/home/slide-3.png" alt="slide-img" /></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="company">
-        <div class="container content">
-            <h2 class="company__title title">Упрощенные закупки для более чем <span class="yellow-text">100,000</span> пользователей по всему миру</h2>
+      <div class="container">
+        <div class="content">
+          <h2 class="company__title title">
+            Упрощенные закупки для более чем <span class="yellow-text">100,000</span> пользователей по всему миру
+          </h2>
+          <div class="company__sliders">
             <div class="company__slider swiper">
-                <div class="swiper-wrapper">
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo1.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo2.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo3.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo4.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo5.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo6.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo1.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo2.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo3.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo4.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo5.svg" alt="icon-company"></div>
-                    <div class="company__block swiper-slide"><img src="./src/img/company/logo6.svg" alt="icon-company"></div>
-                   </div>
+              <div class="swiper-wrapper">
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo1.svg" alt="icon-company" />
+                </div>
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo2.svg" alt="icon-company" />
+                </div>
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo3.svg" alt="icon-company" />
+                </div>
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo4.svg" alt="icon-company" />
+                </div>
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo5.svg" alt="icon-company" />
+                </div>
+                <div class="company__block swiper-slide">
+                  <img src="./src/img/company/logo6.svg" alt="icon-company" />
+                </div>
+              </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="work-ps">
-        <div class="container content">
-            <h2 class="work-ps__title title">Процесс работы</h2>
-            <ul class="work-ps__cards">
-                <li class=" wrok-ps__card card">
-                    <img src="./src/img/work-ps/icon1.svg" alt="card-icon" class="card__icon">
-                    <h3 class="card__title min-title">Создайте заявку</h3>
-                    <p class="card__text">Сообщите ГБ о ваших потребностях и требуемых условиях</p>
-                </li>
-                <li class=" wrok-ps__card card">
-                    <img src="./src/img/work-ps/icon2.svg" alt="card-icon" class="card__icon">
-                    <h3 class="card__title min-title">Займитесь своими делами</h3>
-                    <p class="card__text">ГБ сделает всю работу за вас: опросит тысячи продавцов в реальном времени, проведет аукцион, сравнит предложения.</p>
-                </li>
-                <li class=" wrok-ps__card card">
-                    <img src="./src/img/work-ps/icon3.svg" alt="card-icon" class="card__icon">
-                    <h3 class="card__title min-title">Выберете лучшее предложение</h3>
-                    <p class="card__text">Выберете из предложение по требуемым для вас условиям и оплатите его или отправьте на второй круг торгов</p>
-              </li>
-            </ul>
+      <div class="container">
+        <div class="content">
+          <h2 class="work-ps__title title">Процесс работы</h2>
+          <ul class="work-ps__cards">
+            <li class="wrok-ps__card card">
+              <img src="./src/img/work-ps/icon1.svg" alt="card-icon" class="card__icon" />
+              <h3 class="card__title min-title">Создайте заявку</h3>
+              <p class="card__text">Сообщите ГБ о ваших потребностях и требуемых условиях</p>
+            </li>
+            <li class="wrok-ps__card card">
+              <img src="./src/img/work-ps/icon2.svg" alt="card-icon" class="card__icon" />
+              <h3 class="card__title min-title">Займитесь своими делами</h3>
+              <p class="card__text">
+                ГБ сделает всю работу за вас: опросит тысячи продавцов в реальном времени, проведет аукцион, сравнит
+                предложения.
+              </p>
+            </li>
+            <li class="wrok-ps__card card">
+              <img src="./src/img/work-ps/icon3.svg" alt="card-icon" class="card__icon" />
+              <h3 class="card__title min-title">Выберете лучшее предложение</h3>
+              <p class="card__text">
+                Выберете из предложение по требуемым для вас условиям и оплатите его или отправьте на второй круг торгов
+              </p>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <section class="how">
-        <div class="container content">
-                <div class="text-content row">
-                    <h2 class="how__title title col-md-6">Как происходит создание заявки</h2>
-                    <p class="how__subtitle col-md-6">Получайте нужные вам товары/услуги на выгодных для вас условиях без траты вашего времени на подбор</p> 
-                </div>
-                <div class="how__boxes">
-                    <div class="how__box box">
-                        <div class="box__img-block"><img src="./src/img/how/anim-1.gif" alt="gif" class="box__img"> </div>
-                        <h3 class="box__title">Закажи все что ты хочешь</h3>
-                        <p class="box__subtitle subtitle">Указывайте те условия которые вам требуются - цена, сроки, комплектация...</p>
-                    </div>
-                    <div class="how__box box">
-                        <div class="box__img-block"><img src="./src/img/how/anim-2.gif" alt="gif" class="box__img"></div>
-                        <h3 class="box__title">ГБ скоординирует все это</h3>
-                        <p class="box__subtitle subtitle">Планируемые заранее закупки — еще дешевле</p>
-                    </div>
-                </div>
-                <button class="how__btn btn">Зарегистрироваться</button>
+      <div class="container">
+        <div class="content">
+          <div class="text-content">
+            <h2 class="how__title title">Как происходит создание заявки</h2>
+            <p class="how__subtitle">
+              Получайте нужные вам товары/услуги на выгодных для вас условиях без траты вашего времени на подбор
+            </p>
+          </div>
+          <div class="how__boxes">
+            <div class="how__box box">
+              <div class="box__img-block"><img src="./src/img/how/anim-1.gif" alt="gif" class="box__img" /></div>
+              <h3 class="box__title title-two">Закажи все что ты хочешь</h3>
+              <p class="box__subtitle subtitle">
+                Указывайте те условия которые вам требуются - цена, сроки, комплектация...
+              </p>
             </div>
+            <div class="how__box box">
+              <div class="box__img-block"><img src="./src/img/how/anim-2.gif" alt="gif" class="box__img" /></div>
+              <h3 class="box__title title-two">ГБ скоординирует все это</h3>
+              <p class="box__subtitle subtitle">Планируемые заранее закупки — еще дешевле</p>
+            </div>
+          </div>
+          <button class="how__btn btn">Зарегистрироваться</button>
+        </div>
+      </div>
     </section>
     <section class="planing">
-        <div class="container content">
-            <div class="text-content">
-                <h2 class="planing__title title">Планирование</h2>
+      <div class="container">
+        <div class="content">
+          <div class="text-content">
+            <h2 class="planing__title title">Планирование</h2>
+          </div>
+          <div class="planing__boxes">
+            <div class="planing__img">
+              <img src="./src/img/planing//anim-3.gif" alt="gif-img" />
             </div>
+            <div class="planing__box">
+              <div class="planing__box-content">
+                <h3 class="planing__box-title title-two">
+                  Создайте заявку на периодический товар/услугу и получите их еще дешевле
+                </h3>
+                <p class="planing__boxs-ubtitle subtitle">
+                  За счет заранее выявленного спроса продавци могут оптимизировать цепочки поставок и хранение, а за счет
+                  этого получится уменьшить стоимость товара для вас
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- <section class="map">
+      <div class="map__boxes container ">
+        <div class="map__box box content">
+          <div class="text-content">
+            <h2 class="map__title title">Тендер по требованию</h2>
+          </div>
+          <h3 class="box__title title-two">Создавайте больше заявок на товары/услуги и не тратьте время на подбору</h3>
+          <p class="box__subtitle subtitle">
+            Создать тендер можно полностью в голосовом режиме, даже тогда, когда у вас заняты руки и вы не можете
+            записать потребность
+          </p>
+          <div class="box__img"><img src="./src/img/map/anim-4.gif" alt="gif-img" /></div>
+        </div>
+        <div class="map__box box content">
+          <div class="text-content">
+            <h2 class="map__title title">Бережливый подход</h2>
+          </div>
+          <h3 class="box__title title-two">Получайте предложения от продавцов по соседству</h3>
+          <p class="box__subtitle subtitle">
+            Вы сможете сьэкономить время и получить товар на требуемых условиях, а продавец сьэкономит на рекламе,
+            хранении и доставке
+          </p>
+          <div class="box__img"><img src="./src/img/map/anim-5.gif" alt="gif-img" /></div>
+        </div>
+      </div>
+    </section>
+    <section class="free">
+      <div class="container content">
+        <div class="col-md-7">
+          <h2 class="free__title title">Используйте ГБ бесплатно</h2>
+          <p class="free__subtitle subtitle">
+            Что то про платную подписку которая дает много удобств и отсутствие рекламы и интеграции с мессенджерами и
+            еще кучей всего удобного
+          </p>
+        </div>
+        <div class="col-md-5">
+          <button class="btn">Зарегистрироваться</button>
+        </div>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__first-content">
+          <img class="footer__logo" src="./src/img/gold-logo.svg" alt="logotype" />
+          <ul class="footer__boxes boxes">
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">GrandBazar</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">О ГБ</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Отдел продаж</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Безопасность</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Решения:</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Разработчикам</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__socials">
+                <li class="footer__social"><h4 class="footer__title">Соц.сети</h4></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__second-content">
+          <h4 class="footer__title">Искать - сложно, выбирать - просто!</h4>
+          <p class="footer__subtitle">ГБ- выполнит всю рутинную работу за вас, что бы вы могли достичь большего!</p>
+        </div>
+      </div>
+      <hr />
+      <p class="footer__last-text">©2022 GrandBazar. All rights reserved</p>
+    </footer>
     <script src="./src/libs/swiper.min.js"></script>
     <script src="./src/js/main.js"></script>
   </body>

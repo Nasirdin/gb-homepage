@@ -1,0 +1,19 @@
+.map .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.map .content {
+  max-width: 550px;
+}
+.map .box {
+  margin-bottom: 76px;
+}
+.map .box__img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.map .box__img img {
+  width: 100%;
+}

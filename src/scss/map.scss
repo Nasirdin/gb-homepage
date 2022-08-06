@@ -1,0 +1,19 @@
+.map {
+  .container {
+    justify-content: space-between;
+  }
+  .content {
+    max-width: 550px;
+  }
+  .box {
+    margin-bottom: 76px;
+    &__img {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

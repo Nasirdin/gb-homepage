@@ -9,3 +9,6 @@
 .company__block {
   text-align: center;
 }
+.company .swiper {
+  max-width: 990px;
+}

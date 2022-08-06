@@ -1,30 +1,73 @@
-const sliderOptions = (slidesPerView, loop) => {
-  return {
-    simulateTouch: true,
-    touchRatio: 1,
-    TouchAngle: 45,
-    grabCursor: true,
-    slideToClickedSlide: true,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
+const sliderTwo = new Swiper(".home__slider", {
+  simulateTouch: true,
+  touchRatio: 1,
+  TouchAngle: 45,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventTarget: ".swiper",
+  },
+  slidesPerView: 2.7,
+  loop: false,
+});
+new Swiper(".company__slider", {
+  simulateTouch: true,
+  touchRatio: 1,
+  TouchAngle: 45,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventTarget: ".swiper",
+  },
+  slidesPerView: 2,
+  loop: true,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
+  breakpoints: {
+    1040: {
+      slidesPerView: 6,
     },
-    mousewheel: {
-      sensitivity: 1,
-      eventTarget: ".swiper",
+    920: {
+      slidesPerView: 5,
     },
-    slidesPerView: slidesPerView,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    768: {
+      slidesPerView: 4,
     },
-    loop: loop
-  };
-};
-new Swiper(".home__slider", sliderOptions(2.7, false));
-new Swiper(".company__slider", sliderOptions(6, true));
+    600: {
+      slidesPerView: 3,
+    },
+  },
+});
 
-console.log("====================================");
-console.log(window.outerWidth);
-console.log("====================================");
+const langBtn = document.getElementById("lang-btn");
+const langOptions = document.getElementById("options");
+const dropdownArrow = document.getElementById("dropdown-arrow");
+const langItems = document.querySelectorAll(".dropdown__item");
+const langClose = document.querySelector(".dropdown__close");
+const newArrow = document.createElement("span");
+
+langBtn.addEventListener("click", () => {
+  langOptions.classList.toggle("dropdown__items_active");
+  dropdownArrow.classList.toggle("dropdown__arrow_active");
+  newArrow.classList.toggle("dropdown__arrow_active");
+  bg.classList.toggle("active");
+});
+
+langClose.addEventListener("click", () => {
+  langOptions.classList.remove("header__items_active");
+  bg.classList.remove("active");
+});

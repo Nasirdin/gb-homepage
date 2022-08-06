@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <!-- <link rel="stylesheet" href="./src/libs/bootstrap.css" /> -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="bg"></span>
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav" id="nav">
+          <li class="nav__item"><a class="nav__link" href="../../">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="../downloads">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link nav__link_active" href="#">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a class="nav__login">Войти</a>/<a class="nav__register">регистрация</a>
+          </li>
+        </ul>
+        <span class="header__burger" id="burger"></span>
+      </div>
+    </header>
+    <section class="for-business">
+      <div class="container">
+        <div class="content">
+          <div class="for-business__content">
+            <h2 class="for-business__titile title">Бизнес-инструмент для управления закупками и продажами</h2>
+            <p class="for-business__subtitle">
+              GrandBazar приходит на замену текущим решениям в сфере ecommers в качестве профессионального решения для
+              торговли в интернете
+            </p>
+            <p class="for-business__subtitle">
+              Функции торговли, отслеживания заявок выставления ставок, закупки, совместные торги реализованы в
+              GrandBazar в едином интегрированном решении,, которое открывает новые удивительные способы для работы.
+            </p>
+          </div>
+          <div class="for-business__img">
+            <picture>
+              <source srcset="./src/img/for-business/desk.gif" media="(min-width: 940px)" />
+              <source srcset="./src/img/for-business/mob.gif" media="(min-width: 768px)" />
+              <source srcset="./src/img/for-business/desk.gif" media="(min-width: 575px)" />
+              <img src="./src/img/for-business/mob.gif" alt="statistics" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="request">
+      <div class="container">
+        <div class="content">
+          <button class="request__btn btn">Запросить доступ</button>
+          <div class="request__filling">
+            <span class="request__close"></span>
+            <div class="text-content">
+              <h3 class="request__title title-two">Для получения доступа – заполните форму</h3>
+              <p class="request__subtitle">
+                В течении 3-х дней заявка будет рассмотрена, вы получите уведомление по почте
+              </p>
+            </div>
+            <form action="#" class="request__form form" id="request-form">
+              <div class="form__block">
+                <label class="form__label"
+                  ><input class="form__input" required placeholder="Название организации" type="text"
+                /></label>
+                <label class="form__label"
+                  ><input
+                    class="form__input"
+                    required
+                    placeholder="Имя контактного лица"
+                    type="text"
+                /></label>
+                <label class="form__label"
+                  ><input
+                    class="form__input"
+                    required
+                    placeholder="E-mail"
+                    pattern="(.*)@(.*)\.[a-z]{2,5}"
+                    type="email"
+                /></label>
+                <label class="form__label"
+                  ><input class="form__input" required placeholder="Инн" type="text" pattern="[0-9]{16}|[0-9]{14}"
+                /></label>
+                <label class="form__label"
+                  ><input
+                    class="form__input"
+                    required
+                    placeholder="Телефон"
+                    pattern="+[0-9]{1,4}[0-9]{5,10}"
+                    type="tel"
+                /></label>
+                <label class="form__label"
+                  ><input
+                    class="form__input"
+                    required
+                    placeholder="Сайт"
+                    pattern="https://www.(.*).[a-z]{2,10}|www.(.*).[a-z]{2,10}"
+                    type="text"
+                    title="https://www.google.com | www.google.com"
+                /></label>
+              </div>
+              <label><input class="form__btn btn" id="send-btn" value="Отправить заявку" type="submit" /></label>
+            </form>
+          </div>
+          <div class="request__done done">
+            <span class="request__close"></span>
+            <img class="done__icon" src="./src/img/done/icon.svg" alt="icon" />
+            <h3 class="done__title title-two">Готово!</h3>
+            <div class="done__subtitle subtitle">
+              Ваша заявка отправлена на рассмотрение. В течении 3-х дней вы получите уведомление по почте
+            </div>
+            <button class="done__btn btn" id="done-good">Хорошо!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__first-content">
+          <img class="footer__logo" src="./src/img/gold-logo.svg" alt="logotype" />
+          <ul class="footer__boxes boxes">
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">GrandBazar</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">О ГБ</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Отдел продаж</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Безопасность</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Решения:</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Разработчикам</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__socials">
+                <li class="footer__social"><h4 class="footer__title">Соц.сети</h4></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__second-content">
+          <h4 class="footer__title">Искать - сложно, выбирать - просто!</h4>
+          <p class="footer__subtitle">ГБ- выполнит всю рутинную работу за вас, что бы вы могли достичь большего!</p>
+        </div>
+      </div>
+      <hr />
+      <p class="footer__last-text">©2022 GrandBazar. All rights reserved</p>
+    </footer>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

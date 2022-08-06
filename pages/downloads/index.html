@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="bg"></span>
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav" id="nav">
+          <li class="nav__item"><a class="nav__link" href="../../index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Функции</a></li>
+          <li class="nav__item"><a class="nav__link nav__link_active" href="#">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="../business/">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a class="nav__login">Войти</a>/<a class="nav__register">регистрация</a>
+          </li>
+        </ul>
+        <span class="header__burger" id="burger"></span>
+      </div>
+    </header>
+    <section class="beta-test">
+      <div class="container">
+        <div class="content">
+          <div class="beta-test__box">
+            <h2 class="beta-test__title title">Открытый beta-тест приложения</h2>
+            <p class="beta-test__subtitle">
+              Эта версия GB для Android будет обновляться чаще, чем версия из каталога Google Play, и в ней меньше
+              ограничений.
+            </p>
+            <span class="info-span">*apk формат, для версии Android 5.0.1+</span>
+          </div>
+          <div class="beta-test__box">
+            <button class="beta-test__btn btn" id="download-app">Скачать приложение</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="or">
+      <div class="container">
+        <div class="or__line">
+          <span class="or__text">или</span>
+        </div>
+      </div>
+    </section>
+    <section class="download">
+      <div class="container">
+        <div class="download__box box content">
+          <div class="text-content">
+            <h2 class="box__title title">GrandBazar для iPhone</h2>
+          </div>
+          <div class="box__content">
+            <div class="box__link-block">
+              <a class="box__link" href="#"><img src="./src/img/download/appstore.svg" alt="appstore" /></a>
+              <p class="box__text">Для версии: iOS 10+</p>
+            </div>
+            <div class="box__qr-code">
+              <img src="./src/img/download/oq-code.svg" alt="qr-code" />
+            </div>
+          </div>
+        </div>
+        <div class="download__box box content">
+          <div class="text-content">
+            <h2 class="box__title title">GrandBazar для Android</h2>
+          </div>
+          <div class="box__content">
+            <div class="box__link-block">
+              <a class="box__link" href="#"><img src="./src/img/download/googleplay.svg" alt="appstore" /></a>
+              <p class="box__text">Для версии: Android 5.0.1+</p>
+            </div>
+            <div class="box__qr-code">
+              <img src="./src/img/download/oq-code.svg" alt="qr-code" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="need">
+      <div class="container ">
+        <div class="content">
+          <div class="text-content">
+            <h2 class="heed__title title">Нужен GrandBazar для другого устройства?</h2>
+          </div>
+          <ul class="need__devices">
+            <li class="need__device">
+              <img src="./src/img/download/phone.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Смартфон</p>
+            </li>
+            <li class="need__device">
+              <img src="./src/img/download/computer.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Компьютер</p>
+            </li>
+            <li class="need__device">
+              <img src="./src/img/download/column.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Smart-колонка</p>
+            </li>
+            <li class="need__device">
+              <img src="./src/img/download/smart-watch.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Smart-часы</p>
+            </li>
+            <li class="need__devic">
+              <img src="./src/img/download/smart-tv.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Smart-TV</p>
+            </li>
+            <li class="need__device">
+              <img src="./src/img/download/mediasistem.svg" alt="device-icon" class="need__icon" />
+              <p class="need__text">Медиасистема</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__first-content">
+          <img class="footer__logo" src="./src/img/gold-logo.svg" alt="logotype" />
+          <ul class="footer__boxes boxes">
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">GrandBazar</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">О ГБ</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Отдел продаж</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Безопасность</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Решения:</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__items">
+                <li class="footer__item"><h4 class="footer__title">Разработчикам</h4></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Истории клиентов</a></li>
+              </ul>
+            </li>
+            <li class="boxes__box">
+              <ul class="footer__socials">
+                <li class="footer__social"><h4 class="footer__title">Соц.сети</h4></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__second-content">
+          <h4 class="footer__title">Искать - сложно, выбирать - просто!</h4>
+          <p class="footer__subtitle">ГБ- выполнит всю рутинную работу за вас, что бы вы могли достичь большего!</p>
+        </div>
+      </div>
+      <hr />
+      <p class="footer__last-text">©2022 GrandBazar. All rights reserved</p>
+    </footer>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

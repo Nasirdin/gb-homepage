@@ -1,12 +1,42 @@
 .company {
-    padding: 40px 0;
-    &__title {
-      width: 660px;
-      margin: 0 auto 30px;
-      text-align: center;
-    }
-    &__block {
-      text-align: center;
+  padding: 40px 0;
+  &__title {
+    max-width: 660px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  &__block {
+    text-align: center;
+  }
+  &__sliders {
+    position: relative;
+    padding: 0 30px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $grey-color;
+    &::after {
+      font-size: 14px;
+      font-weight: 700;
     }
   }
-  
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper {
+    max-width: 990px;
+    &-wrapper {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .swiper {
+    img {
+      max-width: 110px;
+    }
+  }
+}
