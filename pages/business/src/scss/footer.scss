@@ -32,6 +32,12 @@
       color: $grey-color;
     }
   }
+  &__link-2 {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
   &__item {
     margin-bottom: 6px;
     &:last-child {
@@ -51,8 +57,23 @@
     margin: 20px 0 0;
     text-align: center;
   }
+  &__icon {
+    font-size: 24px;
+    &:hover {
+      &::before {
+        color: $grey-color;
+      }
+    }
+  }
 }
 
+@media (max-width: 930px) {
+  .footer {
+    &__icon{
+      font-size: 20px;
+    }
+  }
+}
 @media (max-width: 880px) {
   .footer {
     .boxes {

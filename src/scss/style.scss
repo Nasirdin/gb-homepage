@@ -4,48 +4,8 @@
 @import "company";
 @import "worksps";
 @import "how";
-// @import "planing";
-.planing {
-  margin-bottom: 50px;
-  &__title {
-    margin: 0;
-  }
-  &__img {
-    width: 570px;
-    background-color: $lightGrey-color-two;
-    border-radius: 20px;
-    padding: 25px;
-    text-align: center;
-    margin-right: 20px;
-    img {
-      max-width: 335px;
-    }
-  }
-  &__boxes {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__box-content {
-    max-width: 486px;
-    margin-left: auto;
-  }
-}
-@media (max-width: 800px) {
-  .planing {
-    &__img {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    &__boxes {
-      flex-direction: column;
-      align-items: center;
-    }
-    &__box-content {
-      max-width: none;
-    }
-  }
-}
-
+@import "planing";
 @import "map";
 @import "free";
 @import "footer";
+

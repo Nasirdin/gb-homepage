@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GrandBazar - e-commerce superhub</title>
     <link rel="stylesheet" href="./src/libs/swiper.min.css" />
+    <link rel="stylesheet" href="./src/icons/style.css" />
+    <link rel="stylesheet" href="./src/img/footer/style.css">
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
@@ -14,7 +16,7 @@
         <a href="#" class="header__logo log"><img src="./src/img/logo.svg" alt="logotype" /></a>
         <ul class="header__nav nav">
           <li class="nav__item"><a class="nav__link nav__link_active" href="#">Главная</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="./pages/functions/">Функции</a></li>
           <li class="nav__item"><a class="nav__link" href="/pages/downloads">Загрузки</a></li>
           <li class="nav__item"><a class="nav__link" href="/pages/business/">Для бизнеса</a></li>
           <li class="nav__item dropdown">
@@ -112,12 +114,12 @@
           <h2 class="work-ps__title title">Процесс работы</h2>
           <ul class="work-ps__cards">
             <li class="wrok-ps__card card">
-              <img src="./src/img/work-ps/icon1.svg" alt="card-icon" class="card__icon" />
+              <span class="card__icon icon-1"></span>
               <h3 class="card__title min-title">Создайте заявку</h3>
               <p class="card__text">Сообщите ГБ о ваших потребностях и требуемых условиях</p>
             </li>
             <li class="wrok-ps__card card">
-              <img src="./src/img/work-ps/icon2.svg" alt="card-icon" class="card__icon" />
+              <span class="card__icon icon-2"></span>
               <h3 class="card__title min-title">Займитесь своими делами</h3>
               <p class="card__text">
                 ГБ сделает всю работу за вас: опросит тысячи продавцов в реальном времени, проведет аукцион, сравнит
@@ -125,7 +127,7 @@
               </p>
             </li>
             <li class="wrok-ps__card card">
-              <img src="./src/img/work-ps/icon3.svg" alt="card-icon" class="card__icon" />
+              <span class="card__icon icon-3"></span>
               <h3 class="card__title min-title">Выберете лучшее предложение</h3>
               <p class="card__text">
                 Выберете из предложение по требуемым для вас условиям и оплатите его или отправьте на второй круг торгов
@@ -178,8 +180,8 @@
                   Создайте заявку на периодический товар/услугу и получите их еще дешевле
                 </h3>
                 <p class="planing__boxs-ubtitle subtitle">
-                  За счет заранее выявленного спроса продавци могут оптимизировать цепочки поставок и хранение, а за счет
-                  этого получится уменьшить стоимость товара для вас
+                  За счет заранее выявленного спроса продавци могут оптимизировать цепочки поставок и хранение, а за
+                  счет этого получится уменьшить стоимость товара для вас
                 </p>
               </div>
             </div>
@@ -263,12 +265,14 @@
               </ul>
             </li>
             <li class="boxes__box">
-              <ul class="footer__socials">
+              <ul class="footer__items">
                 <li class="footer__social"><h4 class="footer__title">Соц.сети</h4></li>
-                <li class="footer__social"><a href="#" class="footer__link"></a></li>
-                <li class="footer__social"><a href="#" class="footer__link"></a></li>
-                <li class="footer__social"><a href="#" class="footer__link"></a></li>
-                <li class="footer__social"><a href="#" class="footer__link"></a></li>
+                <li class="footer__socials">
+                  <a href="#" class="footer__link-2"><span class="footer__icon icon-footer1"></span></a>
+                  <a href="#" class="footer__link-2"><span class="footer__icon icon-footer2"></span></a>
+                  <a href="#" class="footer__link-2"><span class="footer__icon icon-footer3"></span></a>
+                  <a href="#" class="footer__link-2"><span class="footer__icon icon-footer4"></span></a>
+                </li>
               </ul>
             </li>
           </ul>

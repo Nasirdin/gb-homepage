@@ -59,7 +59,7 @@ h6 {
 .title {
   font-size: 28px;
 }
-.title-two{
+.title-two {
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -77,6 +77,15 @@ h6 {
 }
 .yellow-text {
   color: $yellow-color;
+}
+.icon {
+  font-size: 44px;
+  display: inline-block;
+  &:hover {
+    &::before {
+      color: $yellow-color;
+    }
+  }
 }
 
 .btn {
@@ -112,24 +121,26 @@ h6 {
   }
 }
 @media (max-width: 550px) {
-  body{
+  body {
     font-size: 12px;
   }
-  .text-content{
+  .text-content {
     padding: 0 0 20px;
     margin-bottom: 20px;
   }
-  .title{
+  .title {
     font-size: 18px;
     line-height: 24px;
   }
   .content {
     padding: 30px 20px;
-    
+  }
+  .icon {
+    font-size: 32px;
   }
 }
 @media (max-width: 394px) {
-  .btn{
+  .btn {
     width: 100%;
   }
 }

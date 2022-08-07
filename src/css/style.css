@@ -35,7 +35,7 @@ h6 {
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -75,6 +75,14 @@ h6 {
 }
 
 .yellow-text {
+  color: #ffdc00;
+}
+
+.icon {
+  font-size: 44px;
+  display: inline-block;
+}
+.icon:hover::before {
   color: #ffdc00;
 }
 
@@ -124,11 +132,11 @@ h6 {
     font-size: 18px;
     line-height: 24px;
   }
-  .min-title {
-    font-size: 14px;
-  }
   .content {
     padding: 30px 20px;
+  }
+  .icon {
+    font-size: 32px;
   }
 }
 @media (max-width: 394px) {
@@ -682,11 +690,13 @@ h6 {
   margin-right: 10px;
 }
 .work-ps .card__icon {
-  width: 48px;
   margin-bottom: 20px;
+  font-size: 46px;
+  display: inline-block;
+  translate: 0.3s;
 }
-.work-ps .card__icon:hover {
-  fill: #ffdc00;
+.work-ps .card__icon:hover::before {
+  color: #ffdc00;
 }
 
 @media (max-width: 789px) {
@@ -732,7 +742,7 @@ h6 {
   }
   .work-ps .card__icon {
     margin-bottom: 12px;
-    width: 32px;
+    font-size: 38px;
   }
   .work-ps .card__title {
     margin-bottom: 4px;
@@ -945,6 +955,12 @@ h6 {
 .footer__link:hover {
   color: #99a2ad;
 }
+.footer__link-2 {
+  margin-left: 10px;
+}
+.footer__link-2:first-child {
+  margin-left: 0;
+}
 .footer__item {
   margin-bottom: 6px;
 }
@@ -964,7 +980,18 @@ h6 {
   margin: 20px 0 0;
   text-align: center;
 }
+.footer__icon {
+  font-size: 24px;
+}
+.footer__icon:hover::before {
+  color: #99a2ad;
+}
 
+@media (max-width: 930px) {
+  .footer__icon {
+    font-size: 20px;
+  }
+}
 @media (max-width: 880px) {
   .footer .boxes__box {
     margin-left: 30px;
