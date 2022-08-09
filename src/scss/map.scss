@@ -1,12 +1,20 @@
 .map {
+  padding: 40px 0;
   .container {
+    display: flex;
     justify-content: space-between;
   }
   .content {
     max-width: 550px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:first-child {
+      margin-left: 0;
+    }
   }
   .box {
-    margin-bottom: 76px;
     &__img {
       width: 100%;
       border-radius: 20px;
@@ -15,5 +23,23 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .map {
+    padding: 15px 0;
   }
 }

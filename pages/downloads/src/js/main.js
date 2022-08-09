@@ -7,6 +7,7 @@ const bg = document.querySelector(".bg");
 const newArrow = document.createElement("span");
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
+const body = document.querySelector('body')
 
 langBtn.addEventListener("click", () => {
   langOptions.classList.toggle("dropdown__items_active");
@@ -24,4 +25,5 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("header__burger_active");
   nav.classList.toggle("header__nav_active");
   bg.classList.toggle("bg__active")
+  body.classList.toggle("lock")
 });

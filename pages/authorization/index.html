@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <link rel="stylesheet" href="./src/icon/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="bg"></span>
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/gold-logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav" id="nav">
+          <li class="nav__item"><a class="nav__link" href="../../">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="../functions">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="../downloads">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="../business/">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a href="#" class="nav__login">Войти</a>/<a href="../registration" class="nav__register">регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="auth">
+      <div class="container">
+        <div class="auth__page-1 min-content">
+          <a href="../../"><span class="auth__arrow icon-arrow" id="back-home"></span></a>
+          <h2 class="auth__title">Авторизация</h2>
+          <p class="auth__subtitle">Введите свой телефон или e-mail, чтобы войти в аккаунт</p>
+          <form class="auth__form" id="auth-form" novalidate>
+            <label class="auth__label"
+              ><input
+                type="text"
+                autocomplete="on"
+                placeholder="Телефон или E-mail"
+                required
+                class="auth__input auth__emailOrTel input"
+            /></label>
+            <label class="auth__label"
+              ><input
+                type="password"
+                autocomplete="on"
+                placeholder="Пароль"
+                required
+                class="auth__input auth__password input"
+            /></label>
+            <a class="auth__forget" href="../forget">не помню</a>
+            <a href="#" class="auth__btn btn" id="auth-btn" type="submit">Вход</a>
+            <a href="../registration" class="auth__btn auth__btn_white btn" id="auth-btn" type="submit">Регистрация</a>
+          </form>
+
+          <div class="or">
+            <div class="container">
+              <div class="or__line">
+                <span class="or__text">или</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="auth__items">
+            <li class="auth__item social">
+              <a href="#" class="social__link"><img src="./src/icon/social/icon1.svg" alt="google-icon" /></a>
+            </li>
+            <li class="auth__item social">
+              <a href="#" class="social__link"><img src="./src/icon/social/icon2.svg" alt="apple-icon" /></a>
+            </li>
+            <li class="auth__item social">
+              <a href="#" class="social__link"><img src="./src/icon/social/icon3.svg" alt="facebook-icon" /></a>
+            </li>
+            <li class="auth__item social"><span class="social__more"></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

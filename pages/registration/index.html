@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <link rel="stylesheet" href="./src/icon/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="bg"></span>
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/gold-logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav" id="nav">
+          <li class="nav__item"><a class="nav__link" href="../../">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="../functions">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="../downloads">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="../business/">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a href="../authorization" class="nav__login">Войти</a>/<a href="#" class="nav__register">регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="reg">
+      <div class="container">
+        <div class="reg__page-1 min-content">
+          <a href="../../"><span class="reg__arrow icon-arrow" id="back-home"></span></a>
+          <h2 class="reg__title">Регистрация</h2>
+          <p class="reg__subtitle">Введите свой телефон или e-mail, чтобы зарегистрировать аккаунт</p>
+          <form class="reg__form" id="reg-form" novalidate>
+            <label class="reg__label"
+              ><input
+                type="text"
+                autocomplete="on"
+                placeholder="Телефон или E-mail"
+                required
+                class="reg__input reg__emailOrTel input"
+            /></label>
+            <label class="reg__label"
+              ><input
+                type="password"
+                autocomplete="on"
+                placeholder="Пароль"
+                required
+                class="reg__input reg__password input"
+            /></label>
+            <div class="reg__checkbox">
+              <input id="checkbox" type="checkbox" required class="reg__checkbox-input" />
+              <label for="checkbox" class="reg__checkbox-label">Даю согласие на обработку персональных данных</label>
+            </div>
+            <button class="reg__btn btn" id="reg-btn" type="submit">Регистрация</button>
+          </form>
+        </div>
+        <div class="reg__page-email min-content">
+          <span class="reg__arrow icon-arrow" id="back-reg"></span>
+          <h2 class="reg__title">Подтверждение регистрации</h2>
+          <p class="reg__subtitle reg__subtitle_email">
+            Мы отправили 4-х значный код на почту <span class="reg__span" id="span-email"></span>
+          </p>
+          <form class="reg__check">
+            <label><input class="reg__check-num" id="email-num-1" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="email-num-2" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="email-num-3" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="email-num-4" type="text" maxlength="1" /></label>
+          </form>
+          <p class="reg__repeat-text">
+            Повторная отправка смс-кода доступна через <span class="reg__span" id="span-minute-1"></span> мин
+            <span class="reg__span" id="span-second-1"></span> сек
+          </p>
+          <button class="reg__send-code" id="send-emal">Запросить звонок повторно</button>
+        </div>
+        <div class="reg__page-tel min-content">
+          <span class="reg__arrow icon-arrow"></span>
+          <h2 class="reg__title">Подтверждение регистрации</h2>
+          <p class="reg__subtitle reg__subtitle_email">
+            Мы звоним по номеру <span class="reg__span" id="span-tel"></span>, введите последние 4 цифры входящего
+            звонка для верификации аккаунта
+          </p>
+          <form class="reg__check">
+            <label><input class="reg__check-num" id="tel-num-1" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="tel-num-2" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="tel-num-3" type="text" maxlength="1" /></label>
+            <label><input class="reg__check-num" id="tel-num-4" type="text" maxlength="1" /></label>
+          </form>
+          <p class="reg__repeat-text">
+            Запросить повторный звонок доступно через <span class="reg__span" id="span-minute-2"></span> мин
+            <span class="reg__span" id="span-second-2"></span> сек
+          </p>
+          <button class="reg__send-code" id="send-tel">Запросить звонок повторно</button>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

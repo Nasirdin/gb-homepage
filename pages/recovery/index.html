@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandBazar - e-commerce superhub</title>
+    <link rel="stylesheet" href="./src/icon/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="bg"></span>
+      <div class="container">
+        <a href="#" class="header__logo log"><img src="./src/img/gold-logo.svg" alt="logotype" /></a>
+        <ul class="header__nav nav" id="nav">
+          <li class="nav__item"><a class="nav__link" href="../../">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="../functions">Функции</a></li>
+          <li class="nav__item"><a class="nav__link" href="../downloads">Загрузки</a></li>
+          <li class="nav__item"><a class="nav__link" href="../business/">Для бизнеса</a></li>
+          <li class="nav__item dropdown">
+            <button class="dropdown__lang-btn" name="lang" id="lang-btn">
+              <img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span>
+              <span class="dropdown__arrow" id="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown__items" id="options">
+              <li class="dropdown__item-close">
+                <span class="dropdown__close"></span>
+              </li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-en.svg" alt="flag-en" /><span>en</span></li>
+              <li class="dropdown__item"><img src="./src/img/header/flag-ru.svg" alt="flag-ru" /><span>ru</span></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__authorization">
+            <img src="./src/img/header/auth.svg" aly="authorization-icon" />
+            <a href="../authorization/" class="nav__login">Войти</a>/<a href="../registration/" class="nav__register">регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="recovery">
+      <div class="container">
+        <div class="recovery__page-1 min-content">
+          <a href="../../"><span class="recovery__arrow icon-arrow" id="back-home"></span></a>
+          <h2 class="recovery__title">Восстановление доступа</h2>
+          <p class="recovery__subtitle">Введите свой телефон или e-mail, мы постараемся вернуть вам доступ</p>
+          <form class="recovery__form" id="recovery-form" novalidate>
+            <label class="recovery__label"
+              ><input
+                type="text"
+                autocomplete="on"
+                placeholder="Телефон или E-mail"
+                required
+                class="recovery__input recovery__emailOrTel input"
+            /></label>
+            <button class="recovery__btn btn" id="recovery-btn" type="submit">Регистрация</button>
+          </form>
+        </div>
+        <div class="recovery__page-email min-content">
+          <span class="recovery__arrow icon-arrow back-recovery"></span>
+          <h2 class="recovery__title">Подтверждение регистрации</h2>
+          <p class="recovery__subtitle recovery__subtitle_email">
+            Мы отправили 4-х значный код на почту <span class="recovery__span" id="span-email"></span>
+          </p>
+          <form class="recovery__check">
+            <label><input class="recovery__check-num" id="email-num-1" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="email-num-2" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="email-num-3" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="email-num-4" type="text" maxlength="1" /></label>
+          </form>
+          <p class="recovery__repeat-text">
+            Повторная отправка смс-кода доступна через <span class="recovery__span" id="span-minute-1"></span> мин
+            <span class="recovery__span" id="span-second-1"></span> сек
+          </p>
+          <button class="recovery__send-code" id="send-emal">Запросить звонок повторно</button>
+        </div>
+        <div class="recovery__page-tel min-content">
+          <span class="recovery__arrow icon-arrow back-recovery"></span>
+          <h2 class="recovery__title">Подтверждение регистрации</h2>
+          <p class="recovery__subtitle recovery__subtitle_email">
+            Мы звоним по номеру <span class="recovery__span" id="span-tel"></span>, введите последние 4 цифры входящего
+            звонка для верификации аккаунта
+          </p>
+          <form class="recovery__check">
+            <label><input class="recovery__check-num" id="tel-num-1" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="tel-num-2" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="tel-num-3" type="text" maxlength="1" /></label>
+            <label><input class="recovery__check-num" id="tel-num-4" type="text" maxlength="1" /></label>
+          </form>
+          <p class="recovery__repeat-text">
+            Запросить повторный звонок доступно через <span class="recovery__span" id="span-minute-2"></span> мин
+            <span class="recovery__span" id="span-second-2"></span> сек
+          </p>
+          <button class="recovery__send-code" id="send-tel">Запросить звонок повторно</button>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

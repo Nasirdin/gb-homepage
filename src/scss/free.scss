@@ -1,12 +1,34 @@
 .free {
-  margin-bottom: 130px;
+  padding: 40px 130px;
   .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   &__subtitle {
     margin-bottom: 0;
   }
-  .col-md-5 {
-    text-align: right;
+  &__content {
+    max-width: 575px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 655px) {
+  .free {
+    .content {
+      text-align: center;
+      flex-direction: column;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .free {
+    padding: 15px 40px;
   }
 }

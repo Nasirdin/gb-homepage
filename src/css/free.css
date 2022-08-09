@@ -1,7 +1,14 @@
 .free {
-  margin-bottom: 130px;
+  padding: 40px 130px;
 }
 .free .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9,6 +16,25 @@
 .free__subtitle {
   margin-bottom: 0;
 }
-.free .col-md-5 {
-  text-align: right;
+.free__content {
+  max-width: 575px;
+  margin-right: 20px;
+}
+
+@media (max-width: 655px) {
+  .free .content {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .free__subtitle {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .free {
+    padding: 15px 40px;
+  }
 }

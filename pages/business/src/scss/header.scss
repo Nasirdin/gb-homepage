@@ -234,9 +234,12 @@
     }
     &__burger_active {
       background: none;
+      z-index: 10;
       &::after,
       &::before {
+      transition: 0.4s;
         top: 0;
+        background-color: $white-color;
       }
       &::before {
         transform: rotate(-45deg);

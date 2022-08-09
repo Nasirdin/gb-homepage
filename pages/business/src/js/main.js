@@ -7,6 +7,7 @@ const bg = document.querySelector(".bg");
 const newArrow = document.createElement("span");
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
+const body = document.querySelector('body')
 
 langBtn.addEventListener("click", () => {
   langOptions.classList.toggle("dropdown__items_active");
@@ -23,7 +24,8 @@ langClose.addEventListener("click", () => {
 burger.addEventListener("click", () => {
   burger.classList.toggle("header__burger_active");
   nav.classList.toggle("header__nav_active");
-  bg.classList.toggle("bg__active");
+  bg.classList.toggle("bg__active")
+  body.classList.toggle("lock")
 });
 
 // Window request
@@ -48,13 +50,13 @@ const requestForm = document.getElementById("request-form");
 requestForm.addEventListener("change", (e) => {
   const formInputs = document.getElementsByClassName("form__input");
   const formBtn = document.getElementById("send-btn");
-  let aa = true;
+  let inputValue = true;
   for (let i = 0; i < formInputs.length; i++) {
     if (!formInputs[i].value) {
-      aa = false;
+      inputValue = false;
     }
   }
-  if (aa === true) {
+  if (inputValue === true) {
     formBtn.classList.add("form__btn_active");
     requestForm.addEventListener("submit", (e) => {
       e.preventDefault();

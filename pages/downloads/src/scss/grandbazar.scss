@@ -91,7 +91,7 @@ h6 {
 .btn {
   background-color: $yellow-color;
   color: $dark-color;
-  padding: 15px 0;
+  padding: 15px 15px;
   display: inline-block;
   width: 295px;
   border-radius: 6px;
@@ -100,6 +100,7 @@ h6 {
   outline: none;
   border: none;
   transition: 0.3;
+  cursor: pointer;
   &:hover {
     background-color: $lightGrey-color-three;
   }
@@ -118,6 +119,11 @@ h6 {
   .title-two {
     font-size: 20px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 790px) {
+  body.lock {
+    overflow: hidden;
   }
 }
 @media (max-width: 550px) {
