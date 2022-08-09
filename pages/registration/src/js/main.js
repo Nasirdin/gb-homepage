@@ -9,16 +9,20 @@ const regPassword = document.querySelector(".reg__password");
 function validEmailOrTel(e) {
   const regPassword = document.querySelector(".reg__password");
   const regCheckbox = document.querySelector(".reg__checkbox");
+  const emailOrTelLabel = document.querySelector(".emailOrTelLabel");
   if (emailRe.test(e.target.value)) {
     regPassword.classList.add("reg__password_active");
     regCheckbox.classList.add("reg__checkbox_active");
+    emailOrTelLabel.classList.add("verified");
     regEmailOrTel.classList.remove("error");
   } else if (telRe.test(e.target.value)) {
     regCheckbox.classList.add("reg__checkbox_active");
     regEmailOrTel.classList.remove("error");
+    emailOrTelLabel.classList.add("verified");
   } else {
     regPassword.classList.remove("reg__password_active");
     regCheckbox.classList.remove("reg__checkbox_active");
+    emailOrTelLabel.classList.remove("verified");
     regEmailOrTel.classList.add("error");
   }
 }

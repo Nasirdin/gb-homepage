@@ -2,13 +2,35 @@
 @import "header";
 
 body {
-  overflow: hidden;
+  background-color: $dark-color;
 }
 .reg {
   padding-top: 100px;
-  height: 100vh;
   width: 100%;
-  background-color: $dark-color;
+  .container {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 0;
+    }
+
+    &:before {
+      width: 226px;
+      height: 250px;
+      top: 250px;
+      left: 150px;
+      background: url(../img/img1.png);
+    }
+    &:after {
+      width: 320px;
+      height: 310px;
+      right: 150px;
+      top: -100px;
+      background: url(../img/img2.png);
+    }
+  }
   &__page-1 {
     max-width: 335px;
     display: block;
@@ -23,6 +45,10 @@ body {
     .reg__subtitle {
       margin-bottom: 14px;
     }
+    .reg__title,
+    .reg__subtitle {
+      text-align: center;
+    }
   }
   &__page-email_active,
   &__page-tel_active {
@@ -31,15 +57,14 @@ body {
   .color-blue {
     color: #2688eb;
   }
-  &__title,
-  &__subtitle {
-    text-align: center;
-  }
+
   .min-content {
     background-color: $white-color;
     padding: 30px 20px;
     border-radius: 20px;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
   }
   &__page-email_active,
   &__page-tel_active {
@@ -73,6 +98,18 @@ body {
     width: 100%;
     outline: none;
     font-weight: 700;
+  }
+  .verified {
+    position: relative;
+    &::after {
+      position: absolute;
+      width: 20px;
+      height: 15px;
+      top: 3px;
+      right: 17px;
+      content: "";
+      background: url(../img/check-mark.svg) no-repeat;
+    }
   }
   &__password {
     margin-top: 14px;
@@ -198,5 +235,16 @@ body {
   }
   &__span {
     color: #007bfb;
+  }
+}
+
+@media (max-width: 500px) {
+  .reg {
+    .container {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
   }
 }

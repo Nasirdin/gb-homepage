@@ -373,14 +373,34 @@ h6 {
   }
 }
 body {
-  overflow: hidden;
+  background-color: #161616;
 }
 
 .reg {
   padding-top: 100px;
-  height: 100vh;
   width: 100%;
-  background-color: #161616;
+}
+.reg .container {
+  position: relative;
+}
+.reg .container::before, .reg .container::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+}
+.reg .container:before {
+  width: 226px;
+  height: 250px;
+  top: 250px;
+  left: 150px;
+  background: url(../img/img1.png);
+}
+.reg .container:after {
+  width: 320px;
+  height: 310px;
+  right: 150px;
+  top: -100px;
+  background: url(../img/img2.png);
 }
 .reg__page-1 {
   max-width: 335px;
@@ -396,20 +416,24 @@ body {
 .reg__page-email .reg__subtitle, .reg__page-tel .reg__subtitle {
   margin-bottom: 14px;
 }
+.reg__page-email .reg__title,
+.reg__page-email .reg__subtitle, .reg__page-tel .reg__title,
+.reg__page-tel .reg__subtitle {
+  text-align: center;
+}
 .reg__page-email_active, .reg__page-tel_active {
   display: block;
 }
 .reg .color-blue {
   color: #2688eb;
 }
-.reg__title, .reg__subtitle {
-  text-align: center;
-}
 .reg .min-content {
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 20px;
   margin: 0 auto;
+  position: relative;
+  z-index: 999;
 }
 .reg__page-email_active, .reg__page-tel_active {
   display: block;
@@ -439,6 +463,18 @@ body {
   width: 100%;
   outline: none;
   font-weight: 700;
+}
+.reg .verified {
+  position: relative;
+}
+.reg .verified::after {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  top: 3px;
+  right: 17px;
+  content: "";
+  background: url(../img/check-mark.svg) no-repeat;
 }
 .reg__password {
   margin-top: 14px;
@@ -575,4 +611,10 @@ body {
 }
 .reg__span {
   color: #007bfb;
+}
+
+@media (max-width: 500px) {
+  .reg .container::before, .reg .container::after {
+    display: none;
+  }
 }
