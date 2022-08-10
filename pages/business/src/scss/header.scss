@@ -88,9 +88,9 @@
         display: none;
         padding: 0;
         position: absolute;
-        background: $lightGrey-color-three;
+        background: $lightGrey-color-two;
         top: 34px;
-        border-radius: 20px;
+        border-radius: 6px;
         text-align: center;
         width: 145px;
         z-index: 1;
@@ -290,7 +290,9 @@
         margin-left: 0;
         width: calc(100% + 60px);
         &__items{
+          border-radius: 20px;
           width: 100%;
+          background-color: $lightGrey-color-three;
         }
       }
     }

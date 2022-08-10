@@ -270,9 +270,9 @@ h6 {
   display: none;
   padding: 0;
   position: absolute;
-  background: #dddcdc;
+  background: #f9f9f9;
   top: 34px;
-  border-radius: 20px;
+  border-radius: 6px;
   text-align: center;
   width: 145px;
   z-index: 1;
@@ -485,7 +485,9 @@ h6 {
     width: calc(100% + 60px);
   }
   .header .nav .dropdown__items {
+    border-radius: 20px;
     width: 100%;
+    background-color: #dddcdc;
   }
   .header__nav_active {
     display: -webkit-box !important;

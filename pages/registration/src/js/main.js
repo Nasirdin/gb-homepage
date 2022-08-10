@@ -15,19 +15,19 @@ function validEmailOrTel(e) {
     regPassword.classList.add("reg__password_active");
     regCheckbox.classList.add("reg__checkbox_active");
     emailOrTelLabel.classList.add("verified");
-    passwordEyes.classList.add("eyes-active")
+    passwordEyes.classList.add("eyes-active");
     regEmailOrTel.classList.remove("error");
   } else if (telRe.test(e.target.value)) {
     regCheckbox.classList.add("reg__checkbox_active");
     regEmailOrTel.classList.remove("error");
     emailOrTelLabel.classList.add("verified");
-    passwordEyes.classList.remove("eyes-active")
+    passwordEyes.classList.remove("eyes-active");
   } else {
     regPassword.classList.remove("reg__password_active");
     regCheckbox.classList.remove("reg__checkbox_active");
     emailOrTelLabel.classList.remove("verified");
     regEmailOrTel.classList.add("error");
-    passwordEyes.classList.remove("eyes-active")
+    passwordEyes.classList.remove("eyes-active");
   }
 }
 
@@ -125,4 +125,24 @@ passwordEyes.addEventListener("click", () => {
     // passwordEyes.classList.remove("view");
     regPassword.setAttribute("type", "password");
   }
+});
+
+const langBtn = document.getElementById("lang-btn");
+const langOptions = document.getElementById("options");
+const dropdownArrow = document.getElementById("dropdown-arrow");
+const langItems = document.querySelectorAll(".dropdown__item");
+const langClose = document.querySelector(".dropdown__close");
+const bg = document.querySelector(".bg");
+const newArrow = document.createElement("span");
+
+langBtn.addEventListener("click", () => {
+  langOptions.classList.toggle("dropdown__items_active");
+  dropdownArrow.classList.toggle("dropdown__arrow_active");
+  newArrow.classList.toggle("dropdown__arrow_active");
+  bg.classList.toggle("active");
+});
+
+langClose.addEventListener("click", () => {
+  langOptions.classList.remove("header__items_active");
+  bg.classList.remove("active");
 });

@@ -37,3 +37,23 @@ passwordEyes.addEventListener("click", () => {
     regPassword.setAttribute("type", "password");
   }
 });
+
+const langBtn = document.getElementById("lang-btn");
+const langOptions = document.getElementById("options");
+const dropdownArrow = document.getElementById("dropdown-arrow");
+const langItems = document.querySelectorAll(".dropdown__item");
+const langClose = document.querySelector(".dropdown__close");
+const bg = document.querySelector(".bg");
+const newArrow = document.createElement("span");
+
+langBtn.addEventListener("click", () => {
+  langOptions.classList.toggle("dropdown__items_active");
+  dropdownArrow.classList.toggle("dropdown__arrow_active");
+  newArrow.classList.toggle("dropdown__arrow_active");
+  bg.classList.toggle("active");
+});
+
+langClose.addEventListener("click", () => {
+  langOptions.classList.remove("header__items_active");
+  bg.classList.remove("active");
+});

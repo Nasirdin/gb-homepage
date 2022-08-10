@@ -270,9 +270,9 @@ h6 {
   display: none;
   padding: 0;
   position: absolute;
-  background: #dddcdc;
+  background: #f9f9f9;
   top: 34px;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   width: 145px;
   z-index: 1;
