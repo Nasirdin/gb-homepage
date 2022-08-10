@@ -5,6 +5,7 @@ const passwordRe = /(?=.*[0-9])(?=.*[!@#$%^&.*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z
 const registerForm = document.getElementById("reg-form");
 const regEmailOrTel = document.querySelector(".reg__emailOrTel");
 const regPassword = document.querySelector(".reg__password");
+const passwordEyes = document.querySelector(".eyes");
 
 function validEmailOrTel(e) {
   const regPassword = document.querySelector(".reg__password");
@@ -14,16 +15,19 @@ function validEmailOrTel(e) {
     regPassword.classList.add("reg__password_active");
     regCheckbox.classList.add("reg__checkbox_active");
     emailOrTelLabel.classList.add("verified");
+    passwordEyes.classList.add("eyes-active")
     regEmailOrTel.classList.remove("error");
   } else if (telRe.test(e.target.value)) {
     regCheckbox.classList.add("reg__checkbox_active");
     regEmailOrTel.classList.remove("error");
     emailOrTelLabel.classList.add("verified");
+    passwordEyes.classList.remove("eyes-active")
   } else {
     regPassword.classList.remove("reg__password_active");
     regCheckbox.classList.remove("reg__checkbox_active");
     emailOrTelLabel.classList.remove("verified");
     regEmailOrTel.classList.add("error");
+    passwordEyes.classList.remove("eyes-active")
   }
 }
 
@@ -110,4 +114,15 @@ arrowBackReg.addEventListener("click", () => {
   regPageEmail.classList.remove("reg__page-email_active");
   const regPageTel = document.querySelector(".reg__page-tel");
   regPageTel.classList.remove("reg__page-tel_active");
+});
+
+passwordEyes.addEventListener("click", () => {
+  const regPassword = document.querySelector(".reg__password");
+  if (regPassword.getAttribute("type") == "password") {
+    // passwordEyes.classList.add("view");
+    regPassword.setAttribute("type", "text");
+  } else {
+    // passwordEyes.classList.remove("view");
+    regPassword.setAttribute("type", "password");
+  }
 });

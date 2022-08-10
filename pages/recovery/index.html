@@ -45,7 +45,7 @@
           <h2 class="recovery__title">Восстановление доступа</h2>
           <p class="recovery__subtitle">Введите свой телефон или e-mail, мы постараемся вернуть вам доступ</p>
           <form class="recovery__form" id="recovery-form" novalidate>
-            <label class="recovery__label"
+            <label class="recovery__label emailOrTelLabel"
               ><input
                 type="text"
                 autocomplete="on"
@@ -53,12 +53,12 @@
                 required
                 class="recovery__input recovery__emailOrTel input"
             /></label>
-            <button class="recovery__btn btn" id="recovery-btn" type="submit">Регистрация</button>
+            <button class="recovery__btn btn" id="recovery-btn" type="submit">Восстановить</button>
           </form>
         </div>
         <div class="recovery__page-email min-content">
           <span class="recovery__arrow icon-arrow back-recovery"></span>
-          <h2 class="recovery__title">Подтверждение регистрации</h2>
+          <h2 class="recovery__title">Верификация аккаунта</h2>
           <p class="recovery__subtitle recovery__subtitle_email">
             Мы отправили 4-х значный код на почту <span class="recovery__span" id="span-email"></span>
           </p>
@@ -76,7 +76,7 @@
         </div>
         <div class="recovery__page-tel min-content">
           <span class="recovery__arrow icon-arrow back-recovery"></span>
-          <h2 class="recovery__title">Подтверждение регистрации</h2>
+          <h2 class="recovery__title">Верификация аккаунта</h2>
           <p class="recovery__subtitle recovery__subtitle_email">
             Мы звоним по номеру <span class="recovery__span" id="span-tel"></span>, введите последние 4 цифры входящего
             звонка для верификации аккаунта

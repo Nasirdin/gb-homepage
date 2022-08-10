@@ -8,11 +8,14 @@ const recoveryPassword = document.querySelector(".recovery__password");
 
 function validEmailOrTel(e) {
   const recoveryBtn = document.getElementById("recovery-btn");
+  const emailOrTelLabel = document.querySelector(".emailOrTelLabel");
 
   if (emailRe.test(e.target.value) || telRe.test(e.target.value)) {
     recoveryBtn.classList.add("recovery__btn_active");
     recoveryisterForm.addEventListener("submit", btnrecoveryister);
+    emailOrTelLabel.classList.add("verified");
   } else {
+    emailOrTelLabel.classList.remove("verified");
     recoveryBtn.classList.remove("recovery__btn_active");
   }
 }

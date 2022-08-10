@@ -20,6 +20,9 @@
     justify-content: space-between;
     align-items: end;
   }
+  &__device {
+    cursor: pointer;
+  }
   &__icon {
     margin-bottom: 10px;
   }
@@ -45,7 +48,7 @@
 @media (max-width: 550px) {
   .need {
     padding: 15px 0 50px;
-    .title{
+    .title {
       margin-bottom: 20px;
     }
   }

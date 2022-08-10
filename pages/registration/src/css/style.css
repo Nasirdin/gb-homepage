@@ -476,6 +476,19 @@ body {
   content: "";
   background: url(../img/check-mark.svg) no-repeat;
 }
+.reg .eyes {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  right: 20px;
+  top: 66px;
+  background: url(../img/eyes.svg) no-repeat;
+  display: none;
+  cursor: pointer;
+}
+.reg .eyes-active {
+  display: block;
+}
 .reg__password {
   margin-top: 14px;
 }
@@ -518,6 +531,9 @@ body {
      -moz-appearance: none;
           appearance: none;
   position: absolute;
+}
+.reg__label {
+  position: relative;
 }
 .reg__checkbox-label {
   font-size: 12px;

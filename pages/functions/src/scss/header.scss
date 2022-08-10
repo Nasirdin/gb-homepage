@@ -12,6 +12,9 @@
   &__burger {
     display: none;
   }
+  hr {
+    display: none;
+  }
   .nav {
     display: flex;
     align-items: center;
@@ -85,9 +88,9 @@
         display: none;
         padding: 0;
         position: absolute;
-        background: #ffffff;
+        background: $lightGrey-color-three;
         top: 34px;
-        border-radius: 6px;
+        border-radius: 20px;
         text-align: center;
         width: 145px;
         z-index: 1;
@@ -235,11 +238,13 @@
     &__burger_active {
       background: none;
       z-index: 10;
+      margin-right: 24px;
+      top: 40px;
       &::after,
       &::before {
-      transition: 0.4s;
+        transition: 0.4s;
         top: 0;
-        background-color: $white-color;
+        background-color: $yellow-color;
       }
       &::before {
         transform: rotate(-45deg);
@@ -250,15 +255,29 @@
     }
     .nav {
       display: none;
-      top: 100px;
-      padding: 30px;
+      top: 40px;
+      padding: 60px 30px 30px;
       position: fixed;
       width: calc(100% - 40px);
       border-radius: 20px;
       background-color: $white-color;
       flex-direction: column;
       align-items: center;
-      z-index: 999;
+      z-index: 5;
+      &::after {
+        position: absolute;
+        content: "Меню";
+        top: 30px;
+        left: 20px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      hr {
+        display: block;
+        width: 100%;
+        border-top: 1px solid $lightGrey-color-three;
+        margin-bottom: 20px;
+      }
       &__item {
         margin-left: 0;
         margin-bottom: 20px;
@@ -269,6 +288,10 @@
       }
       .dropdown {
         margin-left: 0;
+        width: calc(100% + 60px);
+        &__items{
+          width: 100%;
+        }
       }
     }
     &__nav_active {

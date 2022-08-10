@@ -45,7 +45,7 @@
           <h2 class="auth__title">Авторизация</h2>
           <p class="auth__subtitle">Введите свой телефон или e-mail, чтобы войти в аккаунт</p>
           <form class="auth__form" id="auth-form" novalidate>
-            <label class="auth__label"
+            <label class="auth__label emailOrTelLabel"
               ><input
                 type="text"
                 autocomplete="on"
@@ -59,18 +59,16 @@
                 autocomplete="on"
                 placeholder="Пароль"
                 required
-                class="auth__input auth__password input"
-            /></label>
-            <a class="auth__forget" href="../forget">не помню</a>
+                class="auth__input auth__password input" /><span class="eyes"></span
+            ></label>
+            <a class="auth__forget" href="../recovery">не помню</a>
             <a href="#" class="auth__btn btn" id="auth-btn" type="submit">Вход</a>
             <a href="../registration" class="auth__btn auth__btn_white btn" id="auth-btn" type="submit">Регистрация</a>
           </form>
 
           <div class="or">
-            <div class="container">
-              <div class="or__line">
-                <span class="or__text">или</span>
-              </div>
+            <div class="or__line">
+              <span class="or__text">или</span>
             </div>
           </div>
 

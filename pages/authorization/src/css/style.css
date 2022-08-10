@@ -373,14 +373,34 @@ h6 {
   }
 }
 body {
-  overflow: hidden;
+  background-color: #161616;
 }
 
 .auth {
   padding-top: 100px;
-  height: 100vh;
   width: 100%;
-  background-color: #161616;
+}
+.auth .container {
+  position: relative;
+}
+.auth .container::before, .auth .container::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+}
+.auth .container:before {
+  width: 226px;
+  height: 250px;
+  top: 250px;
+  left: 150px;
+  background: url(../img/img1.png);
+}
+.auth .container:after {
+  width: 320px;
+  height: 310px;
+  right: 150px;
+  top: -100px;
+  background: url(../img/img2.png);
 }
 .auth__page-1 {
   max-width: 335px;
@@ -391,6 +411,8 @@ body {
   padding: 30px 20px;
   border-radius: 20px;
   margin: 0 auto;
+  position: relative;
+  z-index: 999;
 }
 .auth__page-email_active, .auth__page-tel_active {
   display: block;
@@ -424,6 +446,9 @@ body {
 .auth__password {
   margin-top: 14px;
 }
+.auth__label {
+  position: relative;
+}
 .auth__btn {
   text-align: center;
   margin-top: 30px;
@@ -442,6 +467,31 @@ body {
 }
 .auth__btn_active:hover {
   background-color: #99a2ad;
+}
+.auth .verified {
+  position: relative;
+}
+.auth .verified::after {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  top: 3px;
+  right: 17px;
+  content: "";
+  background: url(../img/check-mark.svg) no-repeat;
+}
+.auth .eyes {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  right: 20px;
+  top: 66px;
+  background: url(../img/eyes.svg) no-repeat;
+  display: none;
+  cursor: pointer;
+}
+.auth .eyes-active {
+  display: block;
 }
 .auth__password {
   display: none;
@@ -526,4 +576,10 @@ body {
 }
 .auth .social__more::after {
   right: 6px;
+}
+
+@media (max-width: 500px) {
+  .auth .container::before, .auth .container::after {
+    display: none;
+  }
 }

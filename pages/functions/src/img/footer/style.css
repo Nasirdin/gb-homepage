@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?h9akbz');
-  src:  url('fonts/icomoon.eot?h9akbz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?h9akbz') format('truetype'),
-    url('fonts/icomoon.woff?h9akbz') format('woff'),
-    url('fonts/icomoon.svg?h9akbz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fg7w70');
+  src:  url('fonts/icomoon.eot?fg7w70#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fg7w70') format('truetype'),
+    url('fonts/icomoon.woff?fg7w70') format('woff'),
+    url('fonts/icomoon.svg?fg7w70#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,19 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-footer1:before {
+.icon-footer3:before {
   content: "\e900";
   color: #fff;
 }
-.icon-footer2:before {
-  content: "\e901";
-  color: #fff;
-}
-.icon-footer3:before {
-  content: "\e902";
-  color: #fff;
-}
 .icon-footer4:before {
-  content: "\e903";
+  content: "\f901";
+  color: #fff;
+}
+.icon-footer2:before {
+  content: "\f902";
+  color: #fff;
+}
+.icon-footer1:before {
+  content: "\f903";
   color: #fff;
 }

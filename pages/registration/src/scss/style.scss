@@ -111,6 +111,19 @@ body {
       background: url(../img/check-mark.svg) no-repeat;
     }
   }
+  .eyes {
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    right: 20px;
+    top: 66px;
+    background: url(../img/eyes.svg) no-repeat;
+    display: none;
+    cursor: pointer;
+  }
+  .eyes-active {
+    display: block;
+  }
   &__password {
     margin-top: 14px;
   }
@@ -150,6 +163,9 @@ body {
   &__checkbox-input {
     appearance: none;
     position: absolute;
+  }
+  &__label {
+    position: relative;
   }
   &__checkbox-label {
     font-size: 12px;

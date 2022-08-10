@@ -2,13 +2,36 @@
 @import "header";
 
 body {
-  overflow: hidden;
+  background-color: $dark-color;
 }
 .recovery {
   padding-top: 100px;
   height: 100vh;
   width: 100%;
-  background-color: $dark-color;
+  .container {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 0;
+    }
+
+    &:before {
+      width: 226px;
+      height: 250px;
+      top: 250px;
+      left: 150px;
+      background: url(../img/img1.png);
+    }
+    &:after {
+      width: 320px;
+      height: 310px;
+      right: 150px;
+      top: -100px;
+      background: url(../img/img2.png);
+    }
+  }
   &__page-1 {
     max-width: 335px;
     display: block;
@@ -27,6 +50,10 @@ body {
   &__page-email_active,
   &__page-tel_active {
     display: block;
+    .recovery__title,
+    .recovery__subtitle {
+      text-align: center;
+    }
   }
   .color-blue {
     color: #2688eb;
@@ -36,6 +63,8 @@ body {
     padding: 30px 20px;
     border-radius: 20px;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
   }
   &__page-email_active,
   &__page-tel_active {
@@ -60,9 +89,6 @@ body {
   }
   &__subtitle {
     margin-bottom: 20px;
-  }
-  &__title, &__subtitle{
-    text-align: center;
   }
   &__input {
     background: $lightGrey-color-two;
@@ -151,6 +177,18 @@ body {
   &__checkbox-input:checked + &__checkbox-label::after {
     opacity: 1;
   }
+  .verified {
+    position: relative;
+    &::after {
+      position: absolute;
+      width: 20px;
+      height: 15px;
+      top: 3px;
+      right: 17px;
+      content: "";
+      background: url(../img/check-mark.svg) no-repeat;
+    }
+  }
 
   &__check {
     display: flex;
@@ -197,5 +235,16 @@ body {
   }
   &__span {
     color: #007bfb;
+  }
+}
+
+@media (max-width: 500px) {
+  .recovery {
+    .container {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
   }
 }
