@@ -62,7 +62,7 @@ const bg = document.querySelector(".bg");
 const newArrow = document.createElement("span");
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
-const body = document.querySelector('body')
+const body = document.querySelector("body");
 
 langBtn.addEventListener("click", () => {
   langOptions.classList.toggle("dropdown__items_active");
@@ -79,6 +79,20 @@ langClose.addEventListener("click", () => {
 burger.addEventListener("click", () => {
   burger.classList.toggle("header__burger_active");
   nav.classList.toggle("header__nav_active");
-  bg.classList.toggle("bg__active")
-  body.classList.toggle("lock")
+  bg.classList.toggle("bg__active");
+  body.classList.toggle("lock");
+});
+
+const cardIcon = document.querySelectorAll(".card__icon");
+cardIcon.forEach((el) => {
+  el.addEventListener("mouseover", () => {
+    for (let i = 0; i < cardIcon.length; i++) {
+      cardIcon[i].classList.add("grey-icon");
+    }
+  });
+  el.addEventListener("mouseout", () => {
+    for (let i = 0; i < cardIcon.length; i++) {
+      cardIcon[i].classList.remove("grey-icon");
+    }
+  });
 });

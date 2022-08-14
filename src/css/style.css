@@ -87,6 +87,14 @@ h6 {
   color: #ffdc00;
 }
 
+.grey-icon::before {
+  color: #99a2ad;
+}
+
+.dark-icon::before {
+  color: #161616;
+}
+
 .btn {
   background-color: #ffdc00;
   color: #161616;

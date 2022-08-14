@@ -86,11 +86,20 @@ h6 {
   color: #ffdc00;
 }
 
+.grey-icon::before {
+  color: #99a2ad;
+}
+
+.dark-icon::before {
+  color: #161616;
+}
+
 .btn {
   background-color: #ffdc00;
   color: #161616;
-  padding: 15px 15px;
+  padding: 13px 15px;
   display: inline-block;
+  text-align: center;
   width: 295px;
   border-radius: 6px;
   font-size: 14px;
@@ -117,7 +126,7 @@ h6 {
     font-size: 24px;
   }
   .title-two {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 }
@@ -138,11 +147,18 @@ h6 {
     font-size: 18px;
     line-height: 24px;
   }
+  .title-two {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
   .content {
     padding: 30px 20px;
   }
   .icon {
     font-size: 32px;
+  }
+  .subtitle {
+    font-size: 12px;
   }
 }
 @media (max-width: 394px) {

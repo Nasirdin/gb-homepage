@@ -87,7 +87,16 @@ h6 {
     }
   }
 }
-
+.grey-icon {
+  &::before {
+    color: $grey-color;
+  }
+}
+.dark-icon {
+  &::before {
+    color: $dark-color;
+  }
+}
 .btn {
   background-color: $yellow-color;
   color: $dark-color;
