@@ -60,11 +60,10 @@
   display: none;
 }
 .home__img-block {
-  max-width: 168px;
   margin-right: 12px;
 }
-.home__img-block img {
-  max-width: 168px;
+.home__img-block:last-child img {
+  width: 169px;
 }
 
 @media (max-width: 1200px) {

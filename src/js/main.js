@@ -14,6 +14,14 @@ const sliderTwo = new Swiper(".home__slider", {
     eventTarget: ".swiper",
   },
   slidesPerView: 2.7,
+  breakpoints: {
+    400: {
+      slidesPerView: 2.7,
+    },
+    320: {
+      slidesPerView: 2.01,
+    },
+  },
   loop: false,
 });
 new Swiper(".company__slider", {
