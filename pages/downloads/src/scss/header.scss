@@ -100,7 +100,7 @@
       }
       &__item,
       .header__item-close {
-        color: #161616;
+        color: $dark-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -236,9 +236,10 @@
       }
     }
     &__burger_active {
-      background: none;
+      background-color: $yellow-color;
+      transform: rotate(90deg);
       z-index: 10;
-      margin-right: 24px;
+      margin-right: 36px;
       top: 40px;
       &::after,
       &::before {
@@ -247,10 +248,10 @@
         background-color: $yellow-color;
       }
       &::before {
-        transform: rotate(-45deg);
+        top: -6px;
       }
       &::after {
-        transform: rotate(45deg);
+        top: -12px;
       }
     }
     .nav {
@@ -290,7 +291,7 @@
         margin-left: 0;
         width: calc(100% + 60px);
         &__items {
-          border-radius: 20%;
+          border-radius: 20px;
           width: 100%;
           background-color: $lightGrey-color-three;
         }

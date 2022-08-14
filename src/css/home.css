@@ -64,7 +64,7 @@
   margin-right: 12px;
 }
 .home__img-block img {
-  width: 100%;
+  max-width: 168px;
 }
 
 @media (max-width: 1200px) {
@@ -145,8 +145,7 @@
     display: block;
   }
   .home__slider::before {
-    -webkit-filter: blur(100px);
-            filter: blur(100px);
+    display: none;
   }
   .home .two {
     display: none;

@@ -47,7 +47,7 @@
     max-width: 168px;
     margin-right: 12px;
     img {
-      width: 100%;
+      max-width: 168px;
     }
   }
 }
@@ -129,7 +129,7 @@
       max-width: 100%;
       display: block;
       &::before {
-        filter: blur(100px);
+        display: none;
       }
     }
     .two{

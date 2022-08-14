@@ -236,9 +236,10 @@
       }
     }
     &__burger_active {
-      background: none;
+      background-color: $yellow-color;
+      transform: rotate(90deg);
       z-index: 10;
-      margin-right: 24px;
+      margin-right: 36px;
       top: 40px;
       &::after,
       &::before {
@@ -247,10 +248,10 @@
         background-color: $yellow-color;
       }
       &::before {
-        transform: rotate(-45deg);
+        top: -6px;
       }
       &::after {
-        transform: rotate(45deg);
+        top: -12px;
       }
     }
     .nav {
