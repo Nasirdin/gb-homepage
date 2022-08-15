@@ -22,11 +22,15 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .for-business {
     .content {
       flex-direction: column;
       align-items: center;
+    }
+    &__title{
+      margin-bottom: 6px;
     }
     &__content {
       max-width: 100%;
