@@ -45,6 +45,7 @@
   }
   &__img-block {
     margin-right: 12px;
+    min-width: 160px !important;
     &:last-child {
       img {
         width: 169px;
@@ -144,6 +145,14 @@
     &__title {
       font-size: 24px;
       line-height: 32px;
+    }
+    &__img-block {
+      min-width: auto !important;
+    }
+    .swiper {
+      img {
+        max-width: 110px;
+      }
     }
   }
 }

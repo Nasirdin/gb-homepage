@@ -31,6 +31,11 @@
     .container {
       flex-direction: column;
     }
+    &__box{
+      &:first-child{
+        margin-bottom: 30px;
+      }
+    }
     .content {
       margin-left: 0;
       max-width: 100%;

@@ -573,6 +573,7 @@ h6 {
 }
 .home__img-block {
   margin-right: 12px;
+  min-width: 160px !important;
 }
 .home__img-block:last-child img {
   width: 169px;
@@ -670,6 +671,12 @@ h6 {
     font-size: 24px;
     line-height: 32px;
   }
+  .home__img-block {
+    min-width: auto !important;
+  }
+  .home .swiper img {
+    max-width: 110px;
+  }
 }
 .company {
   padding: 40px 0;
@@ -714,8 +721,8 @@ h6 {
   .company {
     padding: 15px 0;
   }
-  .swiper img {
-    max-width: 110px;
+  .company .swiper img {
+    max-width: 70px;
   }
 }
 .work-ps {
@@ -990,6 +997,9 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .map__box:first-child {
+    margin-bottom: 30px;
   }
   .map .content {
     margin-left: 0;
