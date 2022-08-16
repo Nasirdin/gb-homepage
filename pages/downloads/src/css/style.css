@@ -801,17 +801,22 @@ h6 {
   color: #99a2ad;
 }
 
+@media (max-width: 1050px) {
+  .footer__first-box {
+    max-width: 185px;
+  }
+}
 @media (max-width: 930px) {
   .footer__icon {
     font-size: 20px;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 905px) {
   .footer .boxes__box {
     margin-left: 30px;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 830px) {
   .footer__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -820,15 +825,27 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0;
   }
   .footer .boxes {
     width: 100%;
+    margin-bottom: 35px;
+  }
+  .footer__logo {
+    margin-bottom: 35px;
+  }
+  .footer__first-box .footer__title, .footer__first-box .footer__subtitle {
+    display: none;
   }
   .footer__second-content {
     display: none;
   }
 }
-@media (max-width: 590px) {
+@media (max-width: 635px) {
+  .footer__content {
+    max-width: 370px;
+    margin: 0 auto;
+  }
   .footer .boxes {
     width: 100%;
     display: grid;
